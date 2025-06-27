@@ -1,0 +1,24 @@
+# preswald.toml
+
+[project]
+title       = "My Assessment App"
+version     = "0.1.0"
+slug        = "my-assessment-app"
+entrypoint  = "hello.py"
+port        = 8000
+
+# (Optional) Customize branding if you like:
+# [branding]
+# name         = "Car Details Explorer"
+# logo         = "images/logo.png"
+# primaryColor = "#3498db"
+
+# Tell Preswald about your CSV data source.
+[data.my_dataset]
+type = "csv"
+# make sure this matches the filename you put under `data/`
+path = "data/car data.csv"
+
+[logging]
+level  = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
